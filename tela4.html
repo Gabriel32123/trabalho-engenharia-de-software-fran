@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Redesign</title>
+    <link rel="stylesheet" href="tela4.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Simulação de Redesign</h1>
+        <p class="subtitle">Ajuste preferências e veja como o novo design será gerado.</p>
+
+
+        <div class="analysis-box">
+            <h2>Como está o design atual?</h2>
+            <p>
+                O sistema detectou que sua interface atual possui elementos desatualizados, baixa
+                hierarquia visual e pouca consistência entre seções. Estamos preparando ajustes baseados
+                nas suas preferências anteriores.
+            </p>
+        </div>
+
+
+        <form id="designForm" class="form">
+
+            <label>Estilo desejado:</label>
+            <select name="estilo" required>
+                <option value="">Selecione...</option>
+                <option value="minimalista">Minimalista e moderno</option>
+                <option value="corporativo">Corporativo profissional</option>
+                <option value="criativo">Criativo e colorido</option>
+                <option value="dark">Dark Mode elegante</option>
+            </select>
+
+            <label>Tipos de melhorias:</label>
+            <div class="checkbox-list">
+                <label><input type="checkbox" name="melhorias" value="cores">Nova paleta de cores</label>
+                <label><input type="checkbox" name="melhorias" value="layout">Layout reorganizado</label>
+                <label><input type="checkbox" name="melhorias" value="icones">Ícones mais modernos</label>
+                <label><input type="checkbox" name="melhorias" value="tipografia">Tipografia atualizada</label>
+            </div>
+
+            <label>Observações adicionais:</label>
+            <textarea name="obs" placeholder="Ex: quero que a tela seja mais limpa..."></textarea>
+
+            <button type="submit" class="generate-btn">Gerar Redesign</button>
+
+        </form>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Gerando redesign baseado nas suas escolhas...</p>
+        </div>
+
+    </div>
+
+    <script src="simulation.js"></script>
+
+</body>
+</html>

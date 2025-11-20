@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aplicando Redesign — Versão Melhorada</title>
+  <link rel="stylesheet" href="tela3.css" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="left">
+      <div class="logo">Carregando o Redesign<span class="dot">.</span></div>
+      <div class="card" aria-live="polite">
+        <div class="spinner" aria-hidden="true">
+          <svg viewBox="0 0 44 44" class="spinner-svg">
+            <circle class="bg" cx="22" cy="22" r="18" stroke-width="4" fill="none"/>
+            <circle class="arc" cx="22" cy="22" r="18" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <h1>Aplicando Redesign</h1>
+        <p id="status" class="muted">Iniciando checagem de contraste e tipografia...</p>
+
+        <div class="progress" aria-hidden="true">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="actions">
+          <button id="pauseBtn" class="btn ghost">Pausar</button>
+          <button id="skipBtn" class="btn">Concluir agora</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="right">
+      <div class="panel">
+        <h2>O que será atualizado</h2>
+        <ul>
+          <li>Hierarquia visual e espaçamento</li>
+          <li>Paleta de cores e contraste</li>
+          <li>Tipografia responsiva</li>
+          <li>Acessibilidade e teclado</li>
+          <li>Consistência de componentes</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <script src="tela3.js"></script>
+</body>
+</html>
